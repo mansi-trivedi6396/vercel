@@ -22,12 +22,13 @@
 // }
 import React from 'react'
 import Appbar from "./Admin/Component/Appbar"
+import Home from './Admin/Component/Home'
 
 export default function index() {
   return (
     <>
     <Appbar/>
-    
+    <Home/>
     
     </>
   )
