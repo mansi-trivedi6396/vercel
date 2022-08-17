@@ -159,9 +159,9 @@ function _renderStepContent(step) {
     // case 1:
     //   return <AddClubForm />
     
+    // case 1:
+    //   return <BillingForm />
     case 1:
-      return <BillingForm />
-    case 2:
        return <AddClubForm />
   }
 }
