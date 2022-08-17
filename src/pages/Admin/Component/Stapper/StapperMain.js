@@ -161,6 +161,10 @@ function _renderStepContent(step) {
     
     case 1:
       return <BillingForm />
+      case 2:
+      return <BillingForm />
+      case 3:
+      return <BillingForm />
     
   }
 }
