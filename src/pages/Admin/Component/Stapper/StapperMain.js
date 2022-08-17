@@ -10,8 +10,8 @@ import {
   withStyles,
 } from "@material-ui/core"
 import React, { Fragment, useState } from "react"
-// import AddClubForm from "../Drawer/Screen/Forms/AddClubForm"
- import AddCourtForm from "../Drawer/Screen/Forms/AddCourtForm"
+ import AddClubForm from "../Drawer/Screen/Forms/AddClubForm"
+// import AddCourtForm from "../Drawer/Screen/Forms/AddCourtForm"
  import BillingForm from "../Drawer/Screen/Forms/BillingForm"
 //import useStyles from "./styles"
 import clsx from "clsx"
@@ -161,8 +161,8 @@ function _renderStepContent(step) {
     
     case 1:
       return <BillingForm />
-      case 2:
-      return <AddCourtForm />
+    case 2:
+       return <AddClubForm />
   }
 }
 
