@@ -56,7 +56,7 @@ function Welcome() {
                     <Typography className={classes.subText} noWrap={true}>
                         Complete these 3 easy steps to create an account. If you don’t have time<br /> to fill in all information than you can skip them and add it later.
                     </Typography>
-                    <Link to='/Admin/Component/Drawer/Screen/Forms/StapperMain/' style={{textDecoration:'none'}}>
+                    <Link to='/Admin/Component/Stapper/StapperMain' style={{textDecoration:'none'}}>
                         <CustomButton text="Start"  />
                     </Link>
                 </Grid>
