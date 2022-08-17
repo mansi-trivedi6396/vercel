@@ -160,10 +160,10 @@ function DrawerSide({ children }) {
         open: false,
         content: "",
       })
-      const IsDrawer1=localStorage.getItem('drawer')
-      React.useEffect(()=>{
-         setDrawer(IsDrawer1)
-      },[IsDrawer1])
+    //   const IsDrawer1=localStorage.getItem('drawer')
+    //   React.useEffect(()=>{
+    //      setDrawer(IsDrawer1)
+    //   },[IsDrawer1])
       const handleClose1 = () => {
         setDrawerOptions({ open: false, content: "" })
       }
