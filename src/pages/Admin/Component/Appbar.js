@@ -54,7 +54,9 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "unset",
     color: "#a5a5a5",
     marginLeft: "100px",
-    textDecoration: "unset"
+    textDecoration: "unset",
+    fontSize: '16.5px',
+    fontWeight:"none"
   },
   signIn: {
     height: '25px'

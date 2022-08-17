@@ -29,7 +29,9 @@ export default function index() {
   return (
     <>
     <Appbar/>
+
     <Home/>
+    
    <Footer/>
     
     </>

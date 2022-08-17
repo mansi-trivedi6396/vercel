@@ -36,6 +36,7 @@ function LoginModal() {
 
         },
         descLogin: {
+            fontFamily: 'DM Sans',
             fontSize: '17px',
             fontStyle: 'normal',
             wordWrap: 'normal',
