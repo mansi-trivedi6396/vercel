@@ -330,7 +330,9 @@ export default function AddCourtForm() {
              <Box style={{display:'flex'}}>
             <div>
             <Grid item container>
+            <Grid md={12}>
               hi
+              </Grid>
               </Grid>
             </div>
              </Box>
