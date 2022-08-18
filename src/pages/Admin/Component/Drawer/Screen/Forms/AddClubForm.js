@@ -185,6 +185,7 @@ import {
 import logo from "../../../../../../images/add_club_logo.svg"
 import FormTextField from "../../../FormTextField"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
+import AccordionCustom from "../../../AccordionCustom"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -247,15 +248,15 @@ export default function AddClubForm() {
     </div>
       </div>
       <div style={{width:'100%'}}>
-        <FormTextField
-          label="Club name"
-          placeHolder="Catella Arena (G2G)"
-        />
-        <Grid
-          style={{ display: "flex", flexDirection: "row", width: "100%" }}
-          justifyContent="space-between"
-          >
+           <FormTextField
+              label="Club name"
+              placeHolder="Catella Arena (G2G)"
+            />
             <Grid
+              style={{ display: "flex", flexDirection: "row", width: "100%" }}
+              justifyContent="space-between"
+            >
+              <Grid
                 style={{
                   marginRight: "-40px",
                   flexDirection: "column",
@@ -264,20 +265,44 @@ export default function AddClubForm() {
                 }}
               >
                 <SelectWithIcon
-                  // data={DATA_FLAG}
+                 // data={DATA_FLAG}
                   placeholder="Select Location"
                   label="Location"
                 />
-                <FormTextField label="Address" placeHolder="Address" />
-               <FormTextField label="Postal code" placeHolder="Postal Code" />
-                </Grid>
-                <FormTextField
+              </Grid>
+              <FormTextField label="Address" placeHolder="Address" />
+              <FormTextField label="Postal code" placeHolder="Postal Code" />
+            </Grid>
+            <FormTextField
               label="Club website (optional)"
               placeHolder="Club website (optional)"
             />
             <FormTextField label="Club email" placeHolder="Club email" />
-       </Grid>
-      </div>
+            <Grid
+              direction="row"
+              style={{ display: "flex", flexDirection: "row", width: "100%" }}
+            >
+             
+              <Grid
+                style={{
+                  marginRight: "-40px",
+                  width: "100%",
+                  flexDirection: "column",
+                  width: "97%",
+                  paddingLeft: "3px",
+                }}
+              >
+                <SelectWithIcon
+                //  data={DATA_CODE}
+                  placeholder="Select Location"
+                  label="Select Location"
+                />
+              </Grid>
+              <FormTextField label="" placeHolder="Phone Number" />
+            </Grid>
+
+            <AccordionCustom userType="addClub" />
+          </div>
       </Grid>
       </div>
       </Container>
