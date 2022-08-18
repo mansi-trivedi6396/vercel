@@ -186,6 +186,7 @@ import logo from "../../../../../../images/add_club_logo.svg"
 import FormTextField from "../../../FormTextField"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AccordionCustom from "../../../AccordionCustom"
+import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -304,6 +305,18 @@ export default function AddClubForm() {
             <AccordionCustom userType="addClub" />
           </div>
       </Grid>
+      <div style={{
+            width: "50%",
+            position: "ABSOLUTE",
+            top: "139px",
+            right: "-195px"
+        }}>
+        <img
+              src={clubInfoImg}
+              width="300px"
+              style={{ padding: "40px", marginTop: "60px" }}
+            />
+        </div>
       </div>
       </Container>
     </div>
