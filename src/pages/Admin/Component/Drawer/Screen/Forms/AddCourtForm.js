@@ -264,6 +264,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import React from 'react'
+import FormTextField from "../../../FormTextField"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -331,7 +332,7 @@ export default function AddCourtForm() {
             <div>
             <Grid item container>
             <Grid md={12}>
-              hi
+            <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
               </Grid>
               </Grid>
             </div>
