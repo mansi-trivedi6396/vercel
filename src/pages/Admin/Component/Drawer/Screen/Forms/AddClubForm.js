@@ -187,6 +187,7 @@ import FormTextField from "../../../FormTextField"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AccordionCustom from "../../../AccordionCustom"
 import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
+import flag from "../../../../../../images/flagIcon.svg"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -233,6 +234,17 @@ const useStyles = makeStyles(theme => ({
   }))
 
 export default function AddClubForm() {
+    const DATA_FLAG = [
+    { label: "SE", icon: flag, value: 1 },
+    { label: "SE", icon: flag, value: 2 },
+    { label: "india", icon: flag, value: 3 },
+  ]
+
+  const DATA_CODE = [
+    { label: "+46", icon: flag, value: 1 },
+    { label: "+56", icon: flag, value: 2 },
+    { label: "+46", icon: flag, value: 3 },
+  ]
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -266,7 +278,7 @@ export default function AddClubForm() {
                 }}
               >
                 <SelectWithIcon
-                 // data={DATA_FLAG}
+                  data={DATA_FLAG}
                   placeholder="Select Location"
                   label="Location"
                 />
@@ -294,7 +306,7 @@ export default function AddClubForm() {
                 }}
               >
                 <SelectWithIcon
-                //  data={DATA_CODE}
+                  data={DATA_CODE}
                   placeholder="Select Location"
                   label="Select Location"
                 />
