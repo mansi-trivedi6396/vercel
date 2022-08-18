@@ -184,6 +184,7 @@ import {
 } from "@material-ui/core"
 import logo from "../../../../../../images/add_club_logo.svg"
 import FormTextField from "../../../FormTextField"
+import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -254,6 +255,20 @@ export default function AddClubForm() {
           style={{ display: "flex", flexDirection: "row", width: "100%" }}
           justifyContent="space-between"
           >
+            <Grid
+                style={{
+                  marginRight: "-40px",
+                  flexDirection: "column",
+                  width: "97%",
+                  paddingLeft: "3px",
+                }}
+              >
+                <SelectWithIcon
+                  // data={DATA_FLAG}
+                  placeholder="Select Location"
+                  label="Location"
+                />
+                </Grid>
        </Grid>
       </div>
       </Grid>
