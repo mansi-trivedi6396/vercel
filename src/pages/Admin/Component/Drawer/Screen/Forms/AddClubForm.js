@@ -268,6 +268,8 @@ export default function AddClubForm() {
                   placeholder="Select Location"
                   label="Location"
                 />
+                <FormTextField label="Address" placeHolder="Address" />
+               <FormTextField label="Postal code" placeHolder="Postal Code" />
                 </Grid>
        </Grid>
       </div>
