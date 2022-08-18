@@ -278,6 +278,7 @@ import NormalSelect from "../../../SelectWithImage/NormalSelect"
 import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AddCourtAccordian from "../../../AddCourtAccordian"
+
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: "transprent",
@@ -334,7 +335,9 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 export default function AddCourtForm() {
+
   const classes = useStyles()
+  
   return (
     <div className={classes.root}>
        <Container maxWidth="lg" style={{marginLeft:22}}>
