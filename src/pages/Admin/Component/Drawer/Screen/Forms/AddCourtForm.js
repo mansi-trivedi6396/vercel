@@ -265,6 +265,7 @@ import {
 } from "@material-ui/core"
 import React from 'react'
 import FormTextField from "../../../FormTextField"
+import NormalSelect from "../../../SelectWithImage/NormalSelect"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -333,6 +334,15 @@ export default function AddCourtForm() {
             <Grid item container>
             <Grid md={12}>
             <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
+            <div className={classes.DivSelect}>
+            <div style={{width:'50%'}}>
+            <NormalSelect
+                   // data={DATA_SPORT}
+                    placeHolder="Select Sport"
+                    label="Sports"
+                  />
+              </div>
+            </div>
               </Grid>
               </Grid>
             </div>
