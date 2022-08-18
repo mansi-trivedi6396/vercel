@@ -236,7 +236,11 @@ const useStyles = makeStyles(theme => ({
     }
   }))
 
-    const DATA_FLAG = [
+   
+
+ const AddClubForm =()=> {
+  const classes = useStyles()
+  const DATA_FLAG = [
     { label: "SE", icon: flag, value: 1 },
     { label: "SE", icon: flag, value: 2 },
     { label: "india", icon: flag, value: 3 },
@@ -247,9 +251,6 @@ const useStyles = makeStyles(theme => ({
     { label: "+56", icon: flag, value: 2 },
     { label: "+46", icon: flag, value: 3 },
   ]
-
-export default function AddClubForm() {
-  const classes = useStyles()
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -329,3 +330,4 @@ export default function AddClubForm() {
     </div>
   )
 }
+export default AddClubForm
