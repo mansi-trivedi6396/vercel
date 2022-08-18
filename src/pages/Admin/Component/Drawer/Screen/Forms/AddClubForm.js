@@ -174,6 +174,7 @@
 // }
 
 // export default AddClubForm
+import React from 'react'
 import {
   Container,
   FormControl,
@@ -181,16 +182,7 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core"
-import React, { useState } from "react"
-import ReactFlagsSelect from "react-flags-select"
-import CountryDropdown from "country-dropdown-with-flags-for-react"
 import logo from "../../../../../../images/add_club_logo.svg"
-import AccordionCustom from "../../../AccordionCustom"
-import FormTextField from "../../../FormTextField"
-import flag from "../../../../../../images/flagIcon.svg"
-import SelectWithImage from "../../../SelectWithImage/SelectWithImage"
-import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
-import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -236,21 +228,8 @@ const useStyles = makeStyles(theme => ({
     }
   }))
 
-   
-
- const AddClubForm =()=> {
+export default function AddClubForm() {
   const classes = useStyles()
-  // const DATA_FLAG = [
-  //   { label: "SE", icon: flag, value: 1 },
-  //   { label: "SE", icon: flag, value: 2 },
-  //   { label: "india", icon: flag, value: 3 },
-  // ]
-
-  // const DATA_CODE = [
-  //   { label: "+46", icon: flag, value: 1 },
-  //   { label: "+56", icon: flag, value: 2 },
-  //   { label: "+46", icon: flag, value: 3 },
-  // ]
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -265,69 +244,9 @@ const useStyles = makeStyles(theme => ({
         <Typography>Club profile picture</Typography>
     </div>
       </div>
-
-      <div style={{width:'100%'}}>
-           <FormTextField
-              label="Club name"
-              placeHolder="Catella Arena (G2G)"
-            />
-            <Grid
-              style={{ display: "flex", flexDirection: "row", width: "100%" }}
-              justifyContent="space-between"
-            >
-              <Grid
-                style={{
-                  marginRight: "-40px",
-                  flexDirection: "column",
-                  width: "97%",
-                  paddingLeft: "3px",
-                }}
-              >
-                <SelectWithIcon
-                  // data={DATA_FLAG}
-                  placeholder="Select Location"
-                  label="Location"
-                />
-              </Grid>
-              <FormTextField label="Address" placeHolder="Address" />
-              <FormTextField label="Postal code" placeHolder="Postal Code" />
-            </Grid>
-            <FormTextField
-              label="Club website (optional)"
-              placeHolder="Club website (optional)"
-            />
-            <FormTextField label="Club email" placeHolder="Club email" />
-            <Grid
-              direction="row"
-              style={{ display: "flex", flexDirection: "row", width: "100%" }}
-            >
-             
-              <Grid
-                style={{
-                  marginRight: "-40px",
-                  width: "100%",
-                  flexDirection: "column",
-                  width: "97%",
-                  paddingLeft: "3px",
-                }}
-              >
-                <SelectWithIcon
-                  // data={DATA_CODE}
-                  placeholder="Select Location"
-                  label="Select Location"
-                />
-              </Grid>
-              <FormTextField label="" placeHolder="Phone Number" />
-            </Grid>
-
-            <AccordionCustom userType="addClub" />
-          </div>
-
-          
       </Grid>
       </div>
       </Container>
     </div>
   )
 }
-export default AddClubForm
