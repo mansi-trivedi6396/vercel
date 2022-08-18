@@ -183,6 +183,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import logo from "../../../../../../images/add_club_logo.svg"
+import FormTextField from "../../../FormTextField"
 const useStyles = makeStyles(theme => ({
     root: {
       backgroundColor: "transprent",
@@ -243,6 +244,12 @@ export default function AddClubForm() {
         <img src={logo} alt="logo" className={classes.logoStyle} />
         <Typography>Club profile picture</Typography>
     </div>
+      </div>
+      <div style={{width:'100%'}}>
+        <FormTextField
+          label="Club name"
+          placeHolder="Catella Arena (G2G)"
+        />
       </div>
       </Grid>
       </div>
