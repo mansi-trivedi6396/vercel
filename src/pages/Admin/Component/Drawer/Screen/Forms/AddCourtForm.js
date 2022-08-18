@@ -342,6 +342,13 @@ export default function AddCourtForm() {
                     label="Sports"
                   />
               </div>
+              <div style={{width:'50%'}}>
+                  <NormalSelect
+                  //  data={DATA_OUTIN}
+                    placeHolder="Outside"
+                    label="Outside/Inside"
+                  />
+                 </div>
             </div>
               </Grid>
               </Grid>
