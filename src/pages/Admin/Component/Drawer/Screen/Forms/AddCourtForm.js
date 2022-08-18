@@ -342,11 +342,7 @@ export default function AddCourtForm() {
       <Container maxWidth="lg" style={{marginLeft:22}}>
       <Typography className={classes.titleText}>2. Add Courts</Typography>
       <Box style={{display:'flex'}}>
-        <div>
-        <Grid item container>
-
-        </Grid>
-        </div>
+        
         </Box>
       </Container>
     </div>
