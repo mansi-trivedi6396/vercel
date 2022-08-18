@@ -271,6 +271,11 @@ export default function AddClubForm() {
                 <FormTextField label="Address" placeHolder="Address" />
                <FormTextField label="Postal code" placeHolder="Postal Code" />
                 </Grid>
+                <FormTextField
+              label="Club website (optional)"
+              placeHolder="Club website (optional)"
+            />
+            <FormTextField label="Club email" placeHolder="Club email" />
        </Grid>
       </div>
       </Grid>
