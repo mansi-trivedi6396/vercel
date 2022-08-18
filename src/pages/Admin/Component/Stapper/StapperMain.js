@@ -154,17 +154,14 @@ const useStyle = makeStyles(theme => ({
 
 function _renderStepContent(step) {
   switch (step) {
-    // case 0:
-    //   return <AddClubForm />
-    // case 1:
-    //   return <AddClubForm />
+   
     
     case 1:
-      return <BillingForm />
-      case 2:
       return <AddClubForm />
-      case 3:
+      case 2:
       return <AddCourtForm />
+      case 3:
+      return <BillingForm />
     
   }
 }
