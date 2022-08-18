@@ -339,7 +339,7 @@ export default function AddCourtForm() {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <Container maxWidth="lg" style={{marginLeft:22}}>
+      <Container >
       <Typography className={classes.titleText}>2. Add Courts</Typography>
       
       </Container>
