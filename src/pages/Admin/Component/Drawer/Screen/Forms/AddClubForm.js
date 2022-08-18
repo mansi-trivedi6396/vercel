@@ -250,6 +250,11 @@ export default function AddClubForm() {
           label="Club name"
           placeHolder="Catella Arena (G2G)"
         />
+        <Grid
+          style={{ display: "flex", flexDirection: "row", width: "100%" }}
+          justifyContent="space-between"
+          >
+       </Grid>
       </div>
       </Grid>
       </div>
