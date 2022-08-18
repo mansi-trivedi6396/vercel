@@ -240,17 +240,17 @@ const useStyles = makeStyles(theme => ({
 
  const AddClubForm =()=> {
   const classes = useStyles()
-  const DATA_FLAG = [
-    { label: "SE", icon: flag, value: 1 },
-    { label: "SE", icon: flag, value: 2 },
-    { label: "india", icon: flag, value: 3 },
-  ]
+  // const DATA_FLAG = [
+  //   { label: "SE", icon: flag, value: 1 },
+  //   { label: "SE", icon: flag, value: 2 },
+  //   { label: "india", icon: flag, value: 3 },
+  // ]
 
-  const DATA_CODE = [
-    { label: "+46", icon: flag, value: 1 },
-    { label: "+56", icon: flag, value: 2 },
-    { label: "+46", icon: flag, value: 3 },
-  ]
+  // const DATA_CODE = [
+  //   { label: "+46", icon: flag, value: 1 },
+  //   { label: "+56", icon: flag, value: 2 },
+  //   { label: "+46", icon: flag, value: 3 },
+  // ]
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -284,7 +284,7 @@ const useStyles = makeStyles(theme => ({
                 }}
               >
                 <SelectWithIcon
-                  data={DATA_FLAG}
+                  // data={DATA_FLAG}
                   placeholder="Select Location"
                   label="Location"
                 />
@@ -312,7 +312,7 @@ const useStyles = makeStyles(theme => ({
                 }}
               >
                 <SelectWithIcon
-                  data={DATA_CODE}
+                  // data={DATA_CODE}
                   placeholder="Select Location"
                   label="Select Location"
                 />
