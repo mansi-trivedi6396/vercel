@@ -254,104 +254,10 @@
 // }
 
 // export default AddCourtForm
+import React from 'react'
 
-
-import {
-  Box,
-  Container,
-  FormControl,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core"
-import React, { useState } from "react"
-import ReactFlagsSelect from "react-flags-select"
-import CountryDropdown from "country-dropdown-with-flags-for-react"
-import logo from "../../../../../../images/add_club_logo.svg"
-import AccordionCustom from "../../../AccordionCustom"
-import FormTextField from "../../../FormTextField"
-import flag from "../../../../../../images/flagIcon.svg"
-import addClubIcon from "../../../../../../images/plus_add_club.svg"
-import line from "../../../../../../images/line.svg"
-import SelectWithImage from "../../../SelectWithImage/SelectWithImage"
-import NormalSelect from "../../../SelectWithImage/NormalSelect"
-import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
-import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
-import AddCourtAccordian from "../../../AddCourtAccordian"
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: "transprent",
-    width: "100%",
-    borderRadius: "10px 10px 0px 0px",
-    height: "100%",
-    paddingTop: "10px",
-    paddingLeft: "21px",
-    fontFamily: "DM Sans",
-  },
-  titleText: {
-    fontSize: "28px",
-    marginBottom: "40px",
-    fontWeight: "400",
-    fontStyle: "normal",
-  },
-  boxRoot: {
-    width: "100%",
-  },
-  profileStyle: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    color: "#B7B7BF",
-    fontSize: "20",
-    margin: "10px",
-  },
-  logoStyle: {
-    marginBottom: "10px",
-  },
-  flagSelect: {
-    background: "white",
-    border: "none",
-    borderRadius: 10,
-    position: "relative",
-    display: "flex",
-    padding: "12px",
-  },
-  flagRoot: {},
-  DivSelect: {
-    display: "flex",
-  },
-  DivSelect2: {
-    display: "flex",
-  },
-  DivSelect3: {
-    display: "flex",
-  },
-  selectIcon:{
-    "&>div .css-b62m3t-container":{
-        paddingRight:'56px !important',
-        marginTop:'11px'
-    }
-  }
-}))
 export default function AddCourtForm() {
-
-  const classes = useStyles()
-
   return (
-    <div className={classes.root}>
-       <Container maxWidth="lg" style={{marginLeft:22}}>
-       <Typography className={classes.titleText}>2. Add Courts</Typography>
-       <Box style={{display:'flex'}}>
-        <div>
-        <Grid item container>
-               <Grid md={12}>
-                <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
-                </Grid>
-        </Grid>
-        </div>
-       </Box>
-       </Container>
-    </div>
+    <div>AddCourtForm</div>
   )
 }
