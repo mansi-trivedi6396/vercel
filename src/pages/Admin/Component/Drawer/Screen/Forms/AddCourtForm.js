@@ -337,38 +337,19 @@ const useStyles = makeStyles(theme => ({
 export default function AddCourtForm() {
 
   const classes = useStyles()
-  
+
   return (
     <div className={classes.root}>
        <Container maxWidth="lg" style={{marginLeft:22}}>
        <Typography className={classes.titleText}>2. Add Courts</Typography>
        <Box style={{display:'flex'}}>
-       <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
-                 <div className={classes.DivSelect}>
-                  <div style={{width:'50%'}}>
-                  <NormalSelect
-                   // data={DATA_SPORT}
-                    placeHolder="Select Sport"
-                    label="Sports"
-                  />
-                  </div>
-                  <div style={{width:'50%'}}>
-                 <NormalSelect
-                  //  data={DATA_OUTIN}
-                    placeHolder="Outside"
-                    label="Outside/Inside"
-                  />
-                 </div>
-                 </div>
-                 <div className={classes.DivSelect2}>
-                   <div  style={{width:'50%'}}>
-                   <NormalSelect
-                  //  data={DATA_COURT_FEU}
-                    placeHolder="Clay"
-                    label="Court features"
-                  />
-                  </div>
-                  </div>
+        <div>
+        <Grid item container>
+               <Grid md={12}>
+                <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
+                </Grid>
+        </Grid>
+        </div>
        </Box>
        </Container>
     </div>
