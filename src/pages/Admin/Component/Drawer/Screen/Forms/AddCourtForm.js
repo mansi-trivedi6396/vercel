@@ -254,7 +254,8 @@
 // }
 
 // export default AddCourtForm
-import React from 'react'
+
+
 import {
   Box,
   Container,
@@ -263,6 +264,20 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core"
+import React, { useState } from "react"
+import ReactFlagsSelect from "react-flags-select"
+import CountryDropdown from "country-dropdown-with-flags-for-react"
+import logo from "../../../../../../images/add_club_logo.svg"
+import AccordionCustom from "../../../AccordionCustom"
+import FormTextField from "../../../FormTextField"
+import flag from "../../../../../../images/flagIcon.svg"
+import addClubIcon from "../../../../../../images/plus_add_club.svg"
+import line from "../../../../../../images/line.svg"
+import SelectWithImage from "../../../SelectWithImage/SelectWithImage"
+import NormalSelect from "../../../SelectWithImage/NormalSelect"
+import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
+import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
+import AddCourtAccordian from "../../../AddCourtAccordian"
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: "transprent",
@@ -324,6 +339,34 @@ export default function AddCourtForm() {
     <div className={classes.root}>
        <Container maxWidth="lg" style={{marginLeft:22}}>
        <Typography className={classes.titleText}>2. Add Courts</Typography>
+       <Box style={{display:'flex'}}>
+       <div style={{width:'100%'}}> <FormTextField placeHolder="Court 1" label="Court Name" /></div>
+                 <div className={classes.DivSelect}>
+                  <div style={{width:'50%'}}>
+                  <NormalSelect
+                   // data={DATA_SPORT}
+                    placeHolder="Select Sport"
+                    label="Sports"
+                  />
+                  </div>
+                  <div style={{width:'50%'}}>
+                 <NormalSelect
+                  //  data={DATA_OUTIN}
+                    placeHolder="Outside"
+                    label="Outside/Inside"
+                  />
+                 </div>
+                 </div>
+                 <div className={classes.DivSelect2}>
+                   <div  style={{width:'50%'}}>
+                   <NormalSelect
+                  //  data={DATA_COURT_FEU}
+                    placeHolder="Clay"
+                    label="Court features"
+                  />
+                  </div>
+                  </div>
+       </Box>
        </Container>
     </div>
   )
