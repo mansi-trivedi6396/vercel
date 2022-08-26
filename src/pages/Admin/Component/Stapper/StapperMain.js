@@ -146,7 +146,7 @@ const useStyle = makeStyles(theme => ({
   marginLeft: "0PX",
   borderRadius: "7PX",
   "&:hover":{
-    backgroundColor: `${ButtonColor} !important`,
+    backgroundColor: "#45C165 !important",
     boxShadow: "NONE",
 }
   }
