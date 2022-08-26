@@ -13,7 +13,7 @@ import React, { Fragment, useState } from "react"
  import AddClubForm from "../Drawer/Screen/Forms/AddClubForm"
  import AddCourtForm from "../Drawer/Screen/Forms/AddCourtForm"
  import BillingForm from "../Drawer/Screen/Forms/BillingForm"
-//import useStyles from "./styles"
+import useStyles from "./styles"
 import clsx from "clsx"
 import PropTypes from "prop-types"
 import activeLine from "../../../../images/active_line.svg"
@@ -200,7 +200,8 @@ QontoStepIcon.propTypes = {
 
 function StapperMain() {
   //const steps = ['Shipping address', 'Payment details', 'Review your order'];
-  const classes = useStyle()
+ // const classes = useStyle()
+  const classes = useStyles()
   const [activeStep, setActiveStep] = useState(1)
 
   const steps = getSteps()
