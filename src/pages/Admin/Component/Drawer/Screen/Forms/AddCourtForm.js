@@ -266,6 +266,7 @@ import {
 import React from 'react'
 import FormTextField from "../../../FormTextField"
 import NormalSelect from "../../../SelectWithImage/NormalSelect"
+import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -358,6 +359,19 @@ export default function AddCourtForm() {
                     placeHolder="Clay"
                     label="Court features"
                   />
+                  </div>
+                  <div style={{display:'flex',width:'50%'}}>
+                   <div style={{width:'100%'}}>
+                     <FormTextField placeHolder="440" label="Price" />
+                   </div>
+
+                    <div style={{width:'100%',marginTop:'13px'}} className={classes.selectIcon}>
+                      <SelectWithIcon
+                       // data={DATA_PRICE}
+                        placeHolder="Select.."
+                        label=""
+                      />
+                    </div>
                   </div>
             </div>
               </Grid>
