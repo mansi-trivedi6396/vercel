@@ -270,6 +270,7 @@ import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AddCourtItems from "./AddCourtItems"
 import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 import addClubIcon from "../../../../../../images/plus_add_club.svg"
+import line from "../../../../../../images/line.svg"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -454,6 +455,15 @@ export default function AddCourtForm() {
           <br />
         </div>
         <br />
+        <img
+          src={line}
+          style={{
+            width: 505,
+            marginTop: "10px",
+            marginBottom: "10px",
+            paddingLeft: "10px",
+          }}
+        />
             </Container>
     </div>
   )
