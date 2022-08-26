@@ -288,44 +288,44 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "400",
     fontStyle: "normal",
   },
-  // boxRoot: {
-  //   width: "100%",
-  // },
-  // profileStyle: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-  //   color: "#B7B7BF",
-  //   fontSize: "20",
-  //   margin: "10px",
-  // },
-  // logoStyle: {
-  //   marginBottom: "10px",
-  // },
-  // flagSelect: {
-  //   background: "white",
-  //   border: "none",
-  //   borderRadius: 10,
-  //   position: "relative",
-  //   display: "flex",
-  //   padding: "12px",
-  // },
-  // flagRoot: {},
-  // DivSelect: {
-  //   display: "flex",
-  // },
-  // DivSelect2: {
-  //   display: "flex",
-  // },
-  // DivSelect3: {
-  //   display: "flex",
-  // },
-  // selectIcon:{
-  //   "&>div .css-b62m3t-container":{
-  //       paddingRight:'56px !important',
-  //       marginTop:'11px'
-  //   }
-  // }
+  boxRoot: {
+    width: "100%",
+  },
+  profileStyle: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    color: "#B7B7BF",
+    fontSize: "20",
+    margin: "10px",
+  },
+  logoStyle: {
+    marginBottom: "10px",
+  },
+  flagSelect: {
+    background: "white",
+    border: "none",
+    borderRadius: 10,
+    position: "relative",
+    display: "flex",
+    padding: "12px",
+  },
+  flagRoot: {},
+  DivSelect: {
+    display: "flex",
+  },
+  DivSelect2: {
+    display: "flex",
+  },
+  DivSelect3: {
+    display: "flex",
+  },
+  selectIcon:{
+    "&>div .css-b62m3t-container":{
+        paddingRight:'56px !important',
+        marginTop:'11px'
+    }
+  }
 }))
 
 export default function AddCourtForm() {
