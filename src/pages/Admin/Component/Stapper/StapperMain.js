@@ -115,14 +115,14 @@ const useStyle = makeStyles(theme => ({
     width: "25%",
   },
   buttonNext: {
-    backgroundColor: `${ButtonColor}`,
+    backgroundColor: "#45C165",
     "&:hover":{
-      backgroundColor:`${ButtonColor}`
+      backgroundColor:"#45C165"
     },
     "&:focus": {
       outline: 0,
       border: 0,
-      backgroundColor: `${ButtonColor}`,
+      backgroundColor: "#45C165",
     },
     marginLeft: "10px",
     color: "white",
@@ -138,7 +138,7 @@ const useStyle = makeStyles(theme => ({
   ButtonFinal:{
     color: "white",
   width: "25%",
-  backgroundColor:`${ButtonColor}`,
+  backgroundColor:"#45C165",
   boxShadow: "NONE",
   justifyContent: "CENTER",
   display: "FLEX",
