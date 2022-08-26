@@ -263,10 +263,11 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core"
-import React from 'react'
+import React, { useState } from 'react'
 import FormTextField from "../../../FormTextField"
 import NormalSelect from "../../../SelectWithImage/NormalSelect"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
+import AddCourtItems from "./AddCourtItems"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -326,6 +327,18 @@ const useStyles = makeStyles(theme => ({
 
 export default function AddCourtForm() {
   const classes = useStyles()
+  const [formFields, setFormFields] = useState([])
+  const [selected, setSelected] = useState("")
+  const addFields = () => {
+    setFormFields([...formFields, "dummy"])
+  }
+
+  const removeFields = index => {
+    let data = [...formFields]
+    data.splice(index, 1)
+    setFormFields(data)
+  }
+ 
   return (
     <div className={classes.root}>
            <Container maxWidth="lg" style={{marginLeft:22}}>
@@ -393,6 +406,17 @@ export default function AddCourtForm() {
                   </div>
                   <br />
             </div>
+            <Grid md={12}>
+                   {formFields.map(index => {
+                return (
+                  <div key={index}>
+                    <AddCourtItems
+                      handleDeleteClick={() => removeFields(index)}
+                    />
+                  </div>
+                )
+              })}
+                </Grid>
               </Grid>
               </Grid>
             </div>
