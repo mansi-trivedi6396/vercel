@@ -268,6 +268,7 @@ import FormTextField from "../../../FormTextField"
 import NormalSelect from "../../../SelectWithImage/NormalSelect"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AddCourtItems from "./AddCourtItems"
+import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -420,6 +421,17 @@ export default function AddCourtForm() {
               </Grid>
               </Grid>
             </div>
+            <div>
+            <img
+              src={clubInfoImg}
+              width="300px"
+              style={{
+                right:100,
+                top:224,
+                position: "absolute",
+              }}
+            />
+          </div>
              </Box>
             </Container>
     </div>
