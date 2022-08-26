@@ -350,6 +350,16 @@ export default function AddCourtForm() {
                   />
                  </div>
             </div>
+            
+            <div className={classes.DivSelect2}>
+            <div  style={{width:'50%'}}>
+                  <NormalSelect
+                   // data={DATA_COURT_FEU}
+                    placeHolder="Clay"
+                    label="Court features"
+                  />
+                  </div>
+            </div>
               </Grid>
               </Grid>
             </div>
