@@ -374,6 +374,25 @@ export default function AddCourtForm() {
                     </div>
                   </div>
             </div>
+
+            <div className={classes.DivSelect3}>
+
+            <div style={{ width: "100%" }}>
+                    <NormalSelect
+                     // data={DATA_STATUS}
+                      placeHolder="Status"
+                      label="Status"
+                    />
+                  </div>
+                  <div style={{ width: "100%" }}>
+                    <NormalSelect
+                     // data={DATA_BOOKING}
+                      placeHolder="Booking length"
+                      label="Booking length"
+                    />
+                  </div>
+                  <br />
+            </div>
               </Grid>
               </Grid>
             </div>
