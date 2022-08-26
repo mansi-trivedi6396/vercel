@@ -271,6 +271,7 @@ import AddCourtItems from "./AddCourtItems"
 import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
 import addClubIcon from "../../../../../../images/plus_add_club.svg"
 import line from "../../../../../../images/line.svg"
+import flag from "../../../../../../images/flagIcon.svg"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -341,6 +342,39 @@ export default function AddCourtForm() {
     data.splice(index, 1)
     setFormFields(data)
   }
+  
+  const DATA_SPORT = [
+    { label: "Tennis", value: 1 },
+    { label: "Football", value: 2 },
+    { label: "Cricket", value: 3 },
+  ]
+
+  const DATA_OUTIN = [
+    { label: "Outside", value: 1 },
+    { label: "Inside", value: 2 },
+  ]
+
+  const DATA_STATUS = [
+    { label: "Private", value: 1 },
+    { label: "Public", value: 2 },
+  ]
+
+  const DATA_BOOKING = [
+    { label: "60 min", value: 1 },
+    { label: "70 min", value: 2 },
+  ]
+
+  const DATA_PRICE = [
+    { label: "SEK", value: 1, icon: flag },
+    { label: "SEK", value: 2, icon: flag },
+    { label: "SEK", value: 3, icon: flag },
+  ]
+
+  const DATA_COURT_FEU = [
+    { label: "Clay", value: 1 },
+    { label: "Clay", value: 2 },
+    { label: "Clay", value: 3 },
+  ]
  
   return (
     <div className={classes.root}>
@@ -354,14 +388,14 @@ export default function AddCourtForm() {
             <div className={classes.DivSelect}>
             <div style={{width:'50%'}}>
             <NormalSelect
-                   // data={DATA_SPORT}
+                   data={DATA_SPORT}
                     placeHolder="Select Sport"
                     label="Sports"
                   />
               </div>
               <div style={{width:'50%'}}>
                   <NormalSelect
-                  //  data={DATA_OUTIN}
+                    data={DATA_OUTIN}
                     placeHolder="Outside"
                     label="Outside/Inside"
                   />
@@ -371,7 +405,7 @@ export default function AddCourtForm() {
             <div className={classes.DivSelect2}>
             <div  style={{width:'50%'}}>
                   <NormalSelect
-                   // data={DATA_COURT_FEU}
+                    data={DATA_COURT_FEU}
                     placeHolder="Clay"
                     label="Court features"
                   />
@@ -383,7 +417,7 @@ export default function AddCourtForm() {
 
                     <div style={{width:'100%',marginTop:'13px'}} className={classes.selectIcon}>
                       <SelectWithIcon
-                       // data={DATA_PRICE}
+                        data={DATA_PRICE}
                         placeHolder="Select.."
                         label=""
                       />
@@ -395,14 +429,14 @@ export default function AddCourtForm() {
 
             <div style={{ width: "100%" }}>
                     <NormalSelect
-                     // data={DATA_STATUS}
+                      data={DATA_STATUS}
                       placeHolder="Status"
                       label="Status"
                     />
                   </div>
                   <div style={{ width: "100%" }}>
                     <NormalSelect
-                     // data={DATA_BOOKING}
+                      data={DATA_BOOKING}
                       placeHolder="Booking length"
                       label="Booking length"
                     />
