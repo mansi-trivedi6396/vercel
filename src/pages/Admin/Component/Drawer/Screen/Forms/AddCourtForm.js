@@ -269,6 +269,7 @@ import NormalSelect from "../../../SelectWithImage/NormalSelect"
 import SelectWithIcon from "../../../SelectWithImage/SelectWithIcon"
 import AddCourtItems from "./AddCourtItems"
 import clubInfoImg from "../../../../../../images/clubInfoimg.svg"
+import addClubIcon from "../../../../../../images/plus_add_club.svg"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -433,6 +434,26 @@ export default function AddCourtForm() {
             />
           </div>
              </Box>
+             <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            float: "left",
+            marginLeft: "12px",
+          }}
+        >
+          <Typography style={{ fontFamily: "DM Sans", fontSize: "15px" }}>
+            Add Court{" "}
+          </Typography>
+          <img
+            src={addClubIcon}
+            onClick={addFields}
+            alt="add"
+            style={{ marginLeft: "5px" }}
+          />
+          <br />
+        </div>
+        <br />
             </Container>
     </div>
   )
